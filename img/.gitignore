@@ -1,0 +1,3 @@
+# Images are stored in cloud storage elsewhere so the repo isn't bloated.
+*
+!.gitignore
