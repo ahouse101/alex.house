@@ -20,47 +20,85 @@
 	<body>
 		<section class="jumbotron">
 			<div class="container">
-				<h1 class="nameplate"><span class="material-icons">developer_mode</span> Alex <b>House</b></h1>
+				<h1 class="nameplate"><!--<span class="material-icons">developer_mode</span>--> <b>Alex</b> House</h1>
 				<p class="lead"><span class="push-up">Software Developer</span><span class="divider-slash"></span><span class="push-down">UI Designer</span></p>
 			</div>
 		</section>
 
-		<section class="container block">
+		<section class="container">
 			<div class="row">
-				<div class="col-sm-12">
-					<div class="about">
+				<div class="col-lg-4">
+					<div class="block about">
 						<h4 class="block-title">About</h4>
-						<p>I'm a <a href="http://eecs.umich.edu/" target="_blank">Computer Science major</a>, studying at the <a href="http://www.engin.umich.edu/" target="_blank">College of Engineering</a> within the <a href="http://www.umich.edu/" target="_blank">University of Michigan</a>.</p>
+						<p>I'm a <a href="http://eecs.umich.edu/">Computer Science major</a>, studying at the <a href="http://www.engin.umich.edu/">College of Engineering</a> within the <a href="http://www.umich.edu/">University of Michigan</a>.</p>
+						<p style="margin-bottom: 20px">I've been programming and designing since early 2008, starting with web development and Windows programming. As a developer, I have experience with:</p>
+						<ul class="bump-list">
+							<li>C# + WinForms (+ ASP.NET)</li>
+							<li>Web Technologies</li>
+							<li style="list-style-type:none"><ul>
+								<li>HTML5 + CSS3 + JavaScript</li>
+								<li>jQuery</li>
+								<li>Bootstrap</li>
+								<li>WordPress</li>
+								<li>Drupal</li>
+								<li>PHP</li>
+								<li>Server Administration</li>
+							</ul></li>
+							<li>C++ (+ Qt)</li>
+							<li>Java (Desktop + Android)</li>
+						</ul>
+						<p>As a designer, I work primarily with web technologies, but also with traditional media. I produce my own graphics with vector software (Inkscape/Illustrator) and edit photographs with Paint.NET and Photoshop. I also do part-time photography.</p>
+					</div>
+					<div class="block about">
+						<h4 class="block-title">Contact</h4>
+						<p><a href="mailto:ahouse@umich.edu">ahouse@umich.edu</a></p>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<section class="container block">
-			<h4 class="block-title">Projects</h4>
-			<div class="row">
-				<div class="col-md-6 col-lg-4">
-					<div class="card">
-						<img class="img-fluid img-preview" src="img/mhybrid.png" alt="">
-						<div class="card-block">
-							<h5 class="card-title">MHybrid</h5>
-							<!--<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+				<div class="col-lg-8" style="overflow: hidden">
+					<div class="block projects">
+						<h4 class="block-title">Projects</h4>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="project-card" data-ref="labspend">
+									<img class="img-fluid" src="img/labspend-home.png" alt="">
+									<h5 class="project-title">Lab Spend</h5>
+								</div>
+								<div class="project-card" data-ref="mhybrid">
+									<img class="img-fluid" src="img/mhybrid.png" alt="">
+									<h5 class="project-title">MHybrid</h5>
+								</div>
+								<div class="project-card" data-ref="eclipz">
+									<img class="img-fluid" src="img/eclipz.png" alt="">
+									<h5 class="project-title">Eclipz</h5>
+								</div>
+								<div class="project-card" data-ref="umsm">
+									<img class="img-fluid" src="img/umsm.png" alt="">
+									<h5 class="project-title">Supermileage</h5>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="project-card" data-ref="bareminimum">
+									<img class="img-fluid" src="img/bareminimum.png" alt="">
+									<h5 class="project-title">BareMinimum</h5>
+								</div>
+								<div class="project-card" data-ref="depot">
+									<img class="img-fluid" src="img/depotdata.png" alt="">
+									<h5 class="project-title">Depot Data</h5>
+								</div>
+								<div class="project-card" data-ref="fizzdeveloper">
+									<img class="img-fluid" src="img/fizzdevelop.png" alt="">
+									<h5 class="project-title">FizzDevelop</h5>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="card">
-						<img class="img-fluid img-preview" src="img/umsm.png" alt="">
-						<div class="card-block">
-							<h5 class="card-title">Supermileage</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="card">
-						<img class="img-fluid img-preview" src="img/eclipz.png" alt="">
-						<div class="card-block">
-							<h5 class="card-title">Eclipz</h5>
+					<div class="block project-details" id="labspend">
+						<h4 class="block-title">Lab Spend</h4>
+						<div class="row">
+							<div class="col-sm-12">
+								<p>Nam auctor sapien purus, et ornare lorem porttitor vel. Etiam at euismod tellus. Suspendisse ligula nunc, ultricies nec vulputate nec, venenatis congue quam. Nunc a odio pretium, commodo velit ac, rutrum ipsum. Quisque lorem velit, hendrerit a nunc eget, condimentum mattis tellus. Sed dapibus accumsan sem malesuada pretium. Maecenas tristique, ante et dignissim iaculis, nulla lacus iaculis enim, eu bibendum nisl mauris quis leo. In pharetra, metus id gravida mattis, felis mi efficitur erat, sed euismod lacus nunc in sem. Fusce semper non orci sed luctus. Suspendisse non magna est. Morbi accumsan pretium pharetra.</p>
+								<p>Vestibulum tempus vestibulum urna id pellentesque. In elementum congue dictum. Fusce viverra a tellus at euismod. Sed vel massa id magna posuere pellentesque. Cras posuere erat vitae malesuada porttitor. Aliquam fringilla vestibulum ornare. Curabitur maximus dui at fringilla condimentum. Pellentesque viverra diam quam. Aenean elementum lorem sed ipsum euismod cursus. Morbi lobortis suscipit volutpat. Donec est ex, luctus et interdum a, semper at turpis. Curabitur finibus risus nisi, ut semper lorem mollis commodo.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -70,5 +108,7 @@
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		
+		<script src="js/index.js"></script>
 	</body>
 </html>
