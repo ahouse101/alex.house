@@ -32,7 +32,7 @@ $(function() {
 	
 	Backbone.history.start();
 	
-	app.$aboutBlock.fadeIn(app.defaultDuration);
+	// app.$aboutBlock.fadeIn(app.defaultDuration);
 	
 	$('.project-card').click(function(ev) {
 		var refID = $(ev.currentTarget).data('ref');
