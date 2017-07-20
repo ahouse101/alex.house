@@ -1,17 +1,19 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta name="author" content="Alex House">
 		<meta name="description" content="Alex House's software development portfolio.">
-		<meta name="viewport" content="width = device-width, initial-scale = 1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 
 		<title>Alex House - Portfolio</title>
 
 		<!-- Bootstrap 4.0.0-alpha6 -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		<!-- Fonts from Google Fonts -->
+		<!-- Fonts from Google Fonts - Raleway (for the header) and Material Icons -->
 		<link href="https://fonts.googleapis.com/css?family=Material+Icons|Raleway:300,400,500" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 		<!-- Custom Styles -->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bg-topography.css">
@@ -27,74 +29,74 @@
 
 		<section class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-xl-3">
 					<div class="block about">
 						<h4 class="block-title">About</h4>
-						<p>I'm a <a href="http://eecs.umich.edu/">Computer Science major</a>, studying at the <a href="http://www.engin.umich.edu/">College of Engineering</a> within the <a href="http://www.umich.edu/">University of Michigan</a>.</p>
-						<p style="margin-bottom: 20px">I've been programming and designing since early 2008, starting with web development and Windows programming. As a developer, I have experience with:</p>
-						<ul class="bump-list">
-							<li>C# + WinForms (+ ASP.NET)</li>
-							<li>Web Technologies</li>
-							<li style="list-style-type:none"><ul>
-								<li>HTML5 + CSS3 + JavaScript</li>
-								<li>jQuery</li>
-								<li>Bootstrap</li>
-								<li>WordPress</li>
-								<li>Drupal</li>
-								<li>PHP</li>
-								<li>Server Administration</li>
-							</ul></li>
-							<li>C++ (+ Qt)</li>
-							<li>Java (Desktop + Android)</li>
-						</ul>
-						<p>As a designer, I work primarily with web technologies, but also with traditional media. I produce my own graphics with vector software (Inkscape/Illustrator) and edit photographs with Paint.NET and Photoshop. I also do part-time photography.</p>
+						<div class="text-center">
+							<img class="prof-pic img-fluid" src="img/profile.jpg">
+						</div>
+						<p>I'm a software developer based in <a href="http://maps.google.com/?q=Ann Arbor, MI" target="_blank">Ann Arbor, MI</a>. Most of my work is full-stack web development, but I've also worked on several C# and Electron apps for Windows.</p>
+						<p>I study <a href="http://eecs.umich.edu/">Computer Science</a> at the <a href="http://www.engin.umich.edu/">College of Engineering</a> within the <a href="http://www.umich.edu/">University of Michigan</a>.</p>
+						<div class="links">
+							<ul class="link-list">
+								<li><i class="fa fa-envelope fa-2x"></i><a href="mailto:ahouse@umich.edu">ahouse@umich.edu</a></li>
+								<li><i class="fa fa-linkedin fa-2x"></i><a href="https://www.linkedin.com/in/alexhouse/">linkedin.com/in/alexhouse</a></li>
+								<li><i class="fa fa-github-alt fa-2x"></i><a href="https://github.com/ahouse101">github.com/ahouse101</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-8" style="overflow: hidden">
+				<div class="col-lg-8 col-xl-9">
 					<div class="block projects">
-						<h4 class="block-title">Projects</h4>
+						<h4 class="block-title">Work</h4>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="project-card" data-ref="labspend">
-									<img class="img-fluid" src="img/labspend-home.png" alt="">
+									<img class="img-fluid" src="img/labspend-home.jpg" alt="">
 									<div class="project-caption">
 										<h5 class="project-title">Lab Spend</h5>
 									</div>
 								</div>
-								<div class="project-card" data-ref="mhybrid">
-									<img class="img-fluid" src="img/mhybrid.png" alt="">
-									<div class="project-caption">
-										<h5 class="project-title">MHybrid</h5>
-									</div>
-								</div>
-								<div class="project-card" data-ref="eclipz">
-									<img class="img-fluid" src="img/eclipz.png" alt="">
-									<div class="project-caption">
-										<h5 class="project-title">Eclipz</h5>
-									</div>
-								</div>
 								<div class="project-card" data-ref="umsm">
-									<img class="img-fluid" src="img/umsm.png" alt="">
+									<img class="img-fluid" src="img/umsm.jpg" alt="">
 									<div class="project-caption">
 										<h5 class="project-title">Supermileage</h5>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-6">
+								<div class="project-card" data-ref="mhybrid">
+									<img class="img-fluid" src="img/mhybrid.jpg" alt="">
+									<div class="project-caption">
+										<h5 class="project-title">MHybrid</h5>
+									</div>
+								</div>
 								<div class="project-card" data-ref="bareminimum">
-									<img class="img-fluid" src="img/bareminimum.png" alt="">
+									<img class="img-fluid" src="img/bareminimum.jpg" alt="">
 									<div class="project-caption">
 										<h5 class="project-title">BareMinimum</h5>
 									</div>
 								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="project-card" data-ref="shoebox">
+									<img class="img-fluid" src="img/shoebox-pre-cropped.jpg" alt="">
+									<div class="project-caption">
+										<h5 class="project-title">Shoebox</h5>
+									</div>
+								</div>
+								<div class="project-card" data-ref="eclipz">
+									<img class="img-fluid" src="img/eclipz.jpg" alt="">
+									<div class="project-caption">
+										<h5 class="project-title">Eclipz</h5>
+									</div>
+								</div>
 								<div class="project-card" data-ref="depot">
-									<img class="img-fluid" src="img/depotdata.png" alt="">
+									<img class="img-fluid" src="img/depotdata.jpg" alt="">
 									<div class="project-caption">
 										<h5 class="project-title">Depot Data</h5>
 									</div>
 								</div>
-								<div class="project-card" data-ref="fizzdeveloper">
-									<img class="img-fluid" src="img/fizzdevelop.png" alt="">
+								<div class="project-card" data-ref="fizzdevelop">
+									<img class="img-fluid" src="img/fizzdevelop.jpg" alt="">
 									<div class="project-caption">
 										<h5 class="project-title">FizzDevelop</h5>
 									</div>
@@ -102,12 +104,79 @@
 							</div>
 						</div>
 					</div>
-					<div class="block project-details" id="labspend">
-						<h4 class="block-title">Lab Spend</h4>
-						<div class="row">
-							<div class="col-sm-12">
-								<p>Nam auctor sapien purus, et ornare lorem porttitor vel. Etiam at euismod tellus. Suspendisse ligula nunc, ultricies nec vulputate nec, venenatis congue quam. Nunc a odio pretium, commodo velit ac, rutrum ipsum. Quisque lorem velit, hendrerit a nunc eget, condimentum mattis tellus. Sed dapibus accumsan sem malesuada pretium. Maecenas tristique, ante et dignissim iaculis, nulla lacus iaculis enim, eu bibendum nisl mauris quis leo. In pharetra, metus id gravida mattis, felis mi efficitur erat, sed euismod lacus nunc in sem. Fusce semper non orci sed luctus. Suspendisse non magna est. Morbi accumsan pretium pharetra.</p>
-								<p>Vestibulum tempus vestibulum urna id pellentesque. In elementum congue dictum. Fusce viverra a tellus at euismod. Sed vel massa id magna posuere pellentesque. Cras posuere erat vitae malesuada porttitor. Aliquam fringilla vestibulum ornare. Curabitur maximus dui at fringilla condimentum. Pellentesque viverra diam quam. Aenean elementum lorem sed ipsum euismod cursus. Morbi lobortis suscipit volutpat. Donec est ex, luctus et interdum a, semper at turpis. Curabitur finibus risus nisi, ut semper lorem mollis commodo.</p>
+					<div class="block details-block">
+						<button type="button" class="icon-btn back-btn"><i class="fa fa-chevron-left fa-lg"></i> Back to Grid</button>
+						<div class="project-details" id="labspend">
+							<h4 class="block-title">Lab Spend</h4>
+							<div class="row">
+								<div class="col-md-10 offset-md-1 col-xl-8 offset-xl-2">
+									<p class="text-center"><a href="https://www.labspend.com/" target="_blank" class="external-link live-site">https://www.labspend.com/</a></p>
+									<p>Lab Spend maintains a comprehensive suite of tools targeting research labs. I've worked with them as a full stack developer since January 2016. The current site is build on a Laravel-based PHP stack with a responsive front-end using the Materialize CSS framework and Backbone.js.</p>
+									<img class="img-fluid" src="img/labspend-home.jpg" alt="">
+									<p>In the summer of 2016, I led the port of the core website from its original plain PHP implementation with various server-side and client-side libraries to a new, streamlined architecture. We chose to adapt the Laravel framework to the project's needs, serving partially constructed Blade views as well as exposing a REST API that a reactive Backbone-based front-end could consume. This resulted in a hybrid Laravel website with each page existing as a compartmentalized single-page JavaScript application, eliminating several server side dependencies and homogenizing our various services' codebases.</p>
+								</div>
+							</div>
+						</div>
+						<div class="project-details" id="umsm">
+							<h4 class="block-title">UM Supermileage</h4>
+							<div class="row">
+								<div class="col-md-10 offset-md-1 col-xl-8 offset-xl-2">
+									<p class="text-center"><a href="http://umsm.engin.umich.edu/" target="_blank" class="external-link live-site">http://umsm.engin.umich.edu/</a></p>
+									<p>University of Michigan's Supermileage team is a small team of student engineers that designs, builds, and competes with a highly efficient vehicle, creating a new design every year.</p>
+									<img class="img-fluid" src="img/umsm.jpg" alt="">
+									<p>The original Supermileage website was a very old WordPress design. The team didn't have a web designer, so no real design work had gone into it. In 2015, I joined the team and started building a new website. Because it was important that other members of the team were able to upload photos and edit copy, I built upon the WordPress base with an entirely new template, as well as a streamlined Admin Dashboard. The team continues to manage the content year-by-year.</p>
+								</div>
+							</div>
+						</div>
+						<div class="project-details" id="mhybrid">
+							<h4 class="block-title">UM Formula Hybrid</h4>
+							<div class="row">
+								<div class="col-md-10 offset-md-1 col-xl-8 offset-xl-2">
+									<p class="text-center"><a href="http://mhybrid.engin.umich.edu/" target="_blank" class="external-link live-site">http://mhybrid.engin.umich.edu/</a></p>
+									<p>University of Michigan's Supermileage team is a small team of student engineers that designs, builds, and competes with a highly efficient vehicle, creating a new design every year.</p>
+									<img class="img-fluid" src="img/mhybrid.jpg" alt="">
+									<p>The original Supermileage website was a very old WordPress design. The team didn't have a web designer, so no real design work had gone into it. In 2015, I joined the team and started building a new website. Because it was important that other members of the team were able to upload photos and edit copy, I built upon the WordPress base with an entirely new template, as well as a streamlined Admin Dashboard. The team continues to manage the content year-by-year.</p>
+								</div>
+							</div>
+						</div>
+						<div class="project-details" id="bareminimum">
+							<h4 class="block-title">BareMiminum</h4>
+							<div class="row">
+								<div class="col-sm-12">
+									
+								</div>
+							</div>
+						</div>
+						<div class="project-details" id="shoebox">
+							<h4 class="block-title">Shoebox</h4>
+							<div class="row">
+								<div class="col-sm-12">
+									
+								</div>
+							</div>
+						</div>
+						<div class="project-details" id="eclipz">
+							<h4 class="block-title">Eclipz Lakenheath</h4>
+							<div class="row">
+								<div class="col-sm-12">
+									
+								</div>
+							</div>
+						</div>
+						<div class="project-details" id="depot">
+							<h4 class="block-title">Depot Data</h4>
+							<div class="row">
+								<div class="col-sm-12">
+									
+								</div>
+							</div>
+						</div>
+						<div class="project-details" id="fizzdevelop">
+							<h4 class="block-title">FizzDevelop</h4>
+							<div class="row">
+								<div class="col-sm-12">
+									
+								</div>
 							</div>
 						</div>
 					</div>
@@ -115,14 +184,11 @@
 			</div>
 		</section>
 		
-		<footer class="bg-topography">
-				<h4 class="block-title">Contact</h4>
-				<a href="mailto:ahouse@umich.edu">ahouse@umich.edu</a>
-		</footer>
-		
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js" integrity="sha256-0atoj6xVOJUoBM8Vp5PFywwLLE+aNl2svi4Q9UWZ+dQ=" crossorigin="anonymous"></script>
 		
 		<script src="js/index.js"></script>
 	</body>
