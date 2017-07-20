@@ -6,8 +6,8 @@
 }
 
 body {
-	background-color: var(--bg-color);
-	color: var(--fg-color);
+	background-color: #282623;
+	color: white;
 	padding-bottom: 6rem;
 }
 
@@ -47,7 +47,7 @@ a:active {
 	font-size: 0.8em;
 }
 
-.live-site:before {
+.live-site::before {
 	content: 'Live Site';
 	color: white;
 	font-size: 0.7em;
@@ -65,71 +65,62 @@ a:active {
 	background-size: cover;
 	font-family: 'Raleway', sans-serif;
 	position: relative;
-	padding: 2rem;
+	padding: 2rem 0.5rem;
 	border-radius: 0;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
+	text-shadow: 0 0 15px #000;
+	text-align: center;
 	/*border-bottom: 2px solid rgba(255, 255, 255, 0.75);*/
 }
 
-.jumbotron .container {
-	/*max-width: 40rem;*/
-	text-shadow: 0 0 15px #000;
-	position: static;
-	text-align: center;
+@media (min-width: 576px) {
+	.jumbotron {
+		padding: 2rem;
+	}
 }
 
 @media (min-width: 992px) {
-	.jumbotron .container {
+	.jumbotron {
 		text-align: left;
 	}
 }
 
-.jumbotron .container::before {
+.jumbotron::before {
 	content: '';
 	width: 100%;
 	height: 100%;
 	top: 0px;
 	left: 0px;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, var(--bg-color));
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #282623);
 	opacity: 1;
 	position: absolute;
 }
 
-.jumbotron .container::after {
+@media (max-width: 340px) {
+	.jumbotron::before {
+		background: linear-gradient(to top, #282623, rgba(0, 0, 0, 0) 3rem);
+	}
+}
+
+.jumbotron::after {
 	content: '';
 	display: block;
 	clear: both;
 }
 
-.jumbotron .lead {
-	font-size: 1rem;
-	position: relative;
-	top: -0.5rem;
-	margin: 0;
-	margin-top: 1rem;
-}
-
-@media (min-width: 992px) {
-	.jumbotron .lead {
-		font-size: 1.4rem;
-		margin: 0;
-		float: right;
-	}
-}
-
-@media (min-width: 1200px) {
-	.jumbotron .lead {
-		font-size: 1.75rem;
-	}
-}
-
 .nameplate {
-	--font-size: 4rem;
+	font-size: 4rem;
 	position: relative;
 	font-weight: 300;
-	font-size: var(--font-size);
-	color: var(--fg-color);
+	font-size: 4rem;
+	color: white;
 	margin: 0;
+}
+
+@media (max-width: 370px) {
+	.nameplate {
+		font-size: 2.5rem;
+	}
 }
 
 @media (min-width: 992px) {
@@ -140,6 +131,50 @@ a:active {
 
 .nameplate b {
 	font-weight: 500;
+}
+
+.lead {
+	font-size: 1rem;
+	position: relative;
+	top: -0.5rem;
+	margin: 0;
+	margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+	.lead {
+		font-size: 1.4rem;
+		margin: 0;
+		float: right;
+	}
+}
+
+@media (min-width: 1200px) {
+	.lead {
+		font-size: 1.75rem;
+	}
+}
+
+@media (max-width: 340px) {
+	.lead {
+		display: none;
+	}
+}
+
+.lead-xs {
+	padding: 1rem 0;
+}
+
+.lead-xs hr {
+	max-width: 175px;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	margin: 5px auto;
+}
+
+@media (min-width: 340px) {
+	.lead-xs {
+		display: none;
+	}
 }
 
 .push-up {
@@ -211,14 +246,13 @@ a:active {
 }
 
 .alt-block {
-	--shadow-size: 2rem;
 	background: #111;
 	margin: 0;
 	margin-bottom: 3rem;
 	padding: 3rem 4rem;
 	width: 110%;
 	
-	box-shadow: 0 var(--shadow-size) var(--shadow-size) calc(-1 * var(--shadow-size)) rgba(0, 0, 0, 0.75) inset, 0 calc(-1 * var(--shadow-size)) var(--shadow-size) calc(-1 * var(--shadow-size)) rgba(0, 0, 0, 0.75) inset;
+	/*box-shadow: 0 2rem 2rem calc(-1 * 2rem) rgba(0, 0, 0, 0.75) inset, 0 calc(-1 * 2rem) 2rem calc(-1 * 2rem) rgba(0, 0, 0, 0.75) inset;*/
 }
 
 .about {
