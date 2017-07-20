@@ -108,6 +108,10 @@ a:active {
 	clear: both;
 }
 
+.jumbotron .container {
+	padding: 0;
+}
+
 .nameplate {
 	font-size: 4rem;
 	position: relative;
@@ -267,9 +271,12 @@ a:active {
 }
 
 .prof-pic {
+	box-sizing: content-box;
 	margin-bottom: 1rem;
 	border-radius: 6px;
 	border: 6px solid rgba(10, 10, 10, 0.5);
+	width: 150px;
+	height: 150px;
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
