@@ -100,11 +100,12 @@ a:active {
 	position: absolute;
 }
 
+/*
 @media (max-width: 340px) {
 	.jumbotron::before {
 		background: linear-gradient(to top, #282623, rgba(0, 0, 0, 0) 3rem);
 	}
-}
+}*/
 
 .jumbotron::after {
 	content: '';
