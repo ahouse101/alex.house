@@ -276,20 +276,47 @@ a:active {
 }
 
 .prof-pic {
+	text-align: center;
+	position: relative;
+}
+
+.prof-pic img {
 	box-sizing: content-box;
 	margin-bottom: 1rem;
 	border-radius: 6px;
 	border: 6px solid rgba(10, 10, 10, 0.5);
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	opacity: 0;
+	transition: opacity 2s;
 }
 
+.prof-pic img:first-child, .prof-pic img:last-child {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -106px;
+}
+
+
 @media (min-width: 576px) and (max-width: 991px) {
-	.prof-pic {
+	.prof-pic img {
 		margin-bottom: 0rem;
 		margin-right: 1.5rem;;
 		float: left;
+		width: 150px;
+		height: 150px;
 	}
+	
+	.prof-pic img:first-child, .prof-pic img:last-child {
+		left: 0;
+		margin-left: 0;
+	}
+}
+
+.shown {
+	opacity: 1 !important;
 }
 
 .links {
@@ -330,12 +357,7 @@ a:active {
 	transition: background 0.3s, box-shadow 0.3s, top 0.2s, left 0.2s;
 	overflow: hidden;
 	cursor: pointer;
-}
-
-@media (min-width: 768px) {
-	.project-card {
-		margin-bottom: 30px;
-	}
+	margin-bottom: 30px;
 }
 
 .project-card:hover {
@@ -365,46 +387,47 @@ a:active {
 }
 
 .project-caption {
+	background: rgba(20, 20, 20, 0.9);
+	z-index: 2;
+	width: calc(100% - 12px);
+	height: calc(100% - 12px);
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	transition: opacity 0.3s;
+	opacity: 0;
 	text-align: center;
 	margin: 0;
 	padding: 1rem 0;
 }
 
-@media (min-width: 768px) {
-	.project-caption {
-		background: rgba(20, 20, 20, 0.9);
-		z-index: 2;
-		width: calc(100% - 12px);
-		height: calc(100% - 12px);
-		position: absolute;
-		top: 6px;
-		left: 6px;
-		transition: opacity 0.3s;
-		opacity: 0;
-	}
-	
-	
-	.project-card:hover .project-caption {
-		opacity: 1;
-	}
-	
-	.project-title {
-		text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-		background: rgba(20, 20, 20, 0);
-		line-height: 6rem;
-		height: 6rem;
-		width: calc(100% - 12px);
-		position: absolute;
-		left: 6px;
-		top: 50%;
-		margin: 0;
-		margin-top: -3rem;
-		font-size: 30px;
-	}
+
+.project-card:hover .project-caption {
+	opacity: 1;
+}
+
+.project-title {
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	background: rgba(20, 20, 20, 0);
+	line-height: 6rem;
+	height: 6rem;
+	width: calc(100% - 12px);
+	position: absolute;
+	left: 6px;
+	top: 50%;
+	margin: 0;
+	margin-top: -3rem;
+	font-size: 30px;
 }
 
 .details-block {
 	display: none;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.details-block .block-title {
+		text-align: right;
+	}
 }
 
 .project-details {
@@ -453,7 +476,7 @@ a:active {
 }
 
 .back-btn {
-	margin: 0 auto 15px auto;
+	margin: 0 0 15px 0;
 	display: block;
 }
 

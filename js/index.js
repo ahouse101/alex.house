@@ -29,6 +29,8 @@ $(function() {
 	app.$overviewBlock = $('.projects');
 	app.$detailsBlock = $('.details-block');
 	app.$detailsTitle = $('.details-block .block-title');
+	app.$profilePictures = $('.prof-pic img');
+	app.currentProfPic = 0;
 	
 	Backbone.history.start();
 	
@@ -40,6 +42,12 @@ $(function() {
 	});
 	
 	$('.back-btn').click(function(ev) {
-		app.router.navigate('', { trigger: true });
+		app.router.navigate('overview', { trigger: true });
 	});
+	
+	setInterval(function() {
+		$(app.$profilePictures[app.currentProfPic]).removeClass('shown');
+		app.currentProfPic = (app.currentProfPic + 1) % 3;
+		$(app.$profilePictures[app.currentProfPic]).addClass('shown');
+	}, 10000);
 });
