@@ -45,9 +45,11 @@ $(function() {
 		app.router.navigate('overview', { trigger: true });
 	});
 	
+	/*
 	setInterval(function() {
 		$(app.$profilePictures[app.currentProfPic]).removeClass('shown');
 		app.currentProfPic = (app.currentProfPic + 1) % 3;
 		$(app.$profilePictures[app.currentProfPic]).addClass('shown');
 	}, 10000);
+	*/
 });
