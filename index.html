@@ -33,29 +33,41 @@
 		<section class="container">
 			<div class="row">
 				<div class="col-lg-4 col-xl-3">
-					<div class="block about">
-						<h4 class="block-title">About</h4>
-						<div class="prof-pic">
-							<img class="img-fluid shown" src="img/profile-linkedin.jpg">
-							<img class="img-fluid" src="img/profile-camera.jpg">
-							<img class="img-fluid" src="img/profile.jpg">
+					<div class="row">
+						<div class="col-sm-5 col-lg-12">
+							<div class="prof-pic">
+								<img class="img-fluid shown hidden-sm-up" src="img/profile-wide2.jpg">
+								<img class="img-fluid shown hidden-md-down" src="img/profile-wide2.jpg">
+								<img class="img-fluid shown hidden-xs-down hidden-lg-up" src="img/profile.jpg">
+								<!--
+								<img class="img-fluid shown" src="img/profile.jpg">
+								<img class="img-fluid" src="img/profile-linkedin.jpg">
+								<img class="img-fluid" src="img/profile-camera.jpg">-->
+							</div>
 						</div>
-						<p>I'm a software developer based in <a href="http://maps.google.com/?q=Ann Arbor, MI" target="_blank">Ann Arbor, MI</a>. Most of my work is full-stack web development, but I've also worked on several C# and Electron apps for Windows.</p>
-						<p>I study <a href="http://eecs.umich.edu/">Computer Science</a> at the <a href="http://www.engin.umich.edu/">College of Engineering</a> within the <a href="http://www.umich.edu/">University of Michigan</a>.</p>
-						<div class="links">
+						<div class="col-sm-7 col-lg-12">
+							<!--<h4 class="block-title">About</h4>-->
+							
+							<p>I'm a software developer based in <a href="http://maps.google.com/?q=Ann Arbor, MI" target="_blank">Ann Arbor, MI</a>. Most of my work is full-stack web development, but I've also worked on several C# and Electron apps for Windows.</p>
+							<p>I study <a href="http://eecs.umich.edu/">Computer Science</a> at the <a href="http://www.engin.umich.edu/">College of Engineering</a> within the <a href="http://www.umich.edu/">University of Michigan</a>.</p>
 							<ul class="link-list">
 								<li><i class="fa fa-envelope fa-2x"></i><a href="mailto:ahouse@umich.edu">ahouse@umich.edu</a></li>
 								<li><i class="fa fa-linkedin fa-2x"></i><a href="https://www.linkedin.com/in/alexhouse/">linkedin.com/in/alexhouse</a></li>
 								<li><i class="fa fa-github-alt fa-2x"></i><a href="https://github.com/ahouse101">github.com/ahouse101</a></li>
 							</ul>
 						</div>
+						<div class="col-12">
+							<div class="links">
+								
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-8 col-xl-9">
-					<div class="block projects">
-						<h4 class="block-title">Work</h4>
+				<div class="col-lg-8 col-xl-9" style="padding-right: 12px">
+					<div class="block projects" style="padding-right: 3px;">
+						<h4 class="block-title">Portfolio</h4>
 						<div class="row">
-							<div class="col-6">
+							<div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0">
 								<div class="project-card" data-ref="labspend">
 									<div class="project-img">
 										<img class="img-fluid" src="img/labspend-home.jpg" alt="">
@@ -83,7 +95,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0">
 								<div class="project-card" data-ref="shoebox">
 									<img class="img-fluid" src="img/shoebox-pre-cropped.jpg" alt="">
 									<div class="project-caption">
@@ -111,8 +123,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="block details-block">
-						<button type="button" class="icon-btn back-btn"><i class="fa fa-chevron-left fa-lg"></i> Back to Grid</button>
+					<div class="block details-block" style="padding-right: 3px;">
+						<button type="button" class="icon-btn back-btn"><i class="fa fa-chevron-left fa-lg"></i> Back</button>
 						<div class="project-details" id="labspend">
 							<h4 class="block-title">Lab Spend</h4>
 							<div class="row">

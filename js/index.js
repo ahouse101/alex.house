@@ -1,5 +1,6 @@
 var app = {};
 app.defaultDuration = 300;
+app.isLoaded = false;
 
 app.Router = Backbone.Router.extend({
 	routes: {
@@ -8,17 +9,25 @@ app.Router = Backbone.Router.extend({
 	},
 	
 	overview: function() {
-		$('.details-block').fadeOut(app.defaultDuration / 2, function() {
-			app.$overviewBlock.fadeIn(app.defaultDuration / 2);
-		});
+		if (!app.isLoaded) {
+			app.$overviewBlock.show();
+			app.isLoaded = true;
+		} else {
+			app.$overviewBlock.slideDown(app.defaultDuration);
+			app.$detailsBlock.slideUp(app.defaultDuration);
+		}
 	},
 	
 	projectDetails: function(project) {
 		$('.project-details').hide();
 		$('#' + project).show();
-		app.$overviewBlock.fadeOut(app.defaultDuration / 2, function() {
-			$('.details-block').fadeIn(app.defaultDuration / 2);
-		});
+		if (!app.isLoaded) {
+			app.$detailsBlock.show();
+			app.isLoaded = true;
+		} else {
+			app.$overviewBlock.slideUp(app.defaultDuration);
+			app.$detailsBlock.slideDown(app.defaultDuration);
+		}
 	},
 });
 
